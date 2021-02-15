@@ -1,0 +1,13 @@
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.csprojAssemblyReference.cache
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.AssemblyInfoInputs.cache
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.AssemblyInfo.cs
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.csproj.CoreCompileInputs.cache
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.exe
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.deps.json
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.runtimeconfig.json
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.runtimeconfig.dev.json
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.dll
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\bin\Debug\netcoreapp3.1\ConnectFore.pdb
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.dll
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.pdb
+C:\Users\phill\Documents\GitHub\SideProjects\ConnectFore\ConnectFore\obj\Debug\netcoreapp3.1\ConnectFore.genruntimeconfig.cache
