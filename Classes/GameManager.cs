@@ -43,15 +43,24 @@ namespace ConnectFore.Classes
                     bool validColumn = false;
                     do
                     {
-                        Console.Write("Where would you like to place your piece? (1-7)");
+                        Console.Write("Where would you like to place your piece? ");
                         string columnSelect = Console.ReadLine().Trim();
                         int value;
                         if (int.TryParse(columnSelect, out value) && value < 8 && value > 0)
                         {
                             if (GameBoard.PlacePiecePlayerOne(value - 1))
                             {
-                                Console.WriteLine($"Piece placed in Column {value - 1}");
+                                Console.WriteLine($"Piece placed in Column {value}");
                                 validColumn = true;
+                                if (GameBoard.CheckWin())
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine(GameBoard.ViewBoard());
+                                    Console.WriteLine($"Congratulations! {PlayerOne.PlayerName} is the winner");
+                                    Console.WriteLine("Press any key to exit.");
+                                    Console.ReadLine();
+                                    Environment.Exit(0);
+                                }
                             }
                             else
                             {
@@ -75,15 +84,24 @@ namespace ConnectFore.Classes
                     bool validColumn = false;
                     do
                     {
-                        Console.Write("Where would you like to place your piece?");
+                        Console.Write("Where would you like to place your piece? ");
                         string columnSelect = Console.ReadLine().Trim();
                         int value;
                         if (int.TryParse(columnSelect, out value) && value < 8 && value > 0)
                         {
                             if(GameBoard.PlacePiecePlayerTwo(value - 1))
                             {
-                                Console.WriteLine($"Piece placed in Column {value - 1}");
+                                Console.WriteLine($"Piece placed in Column {value}");
                                 validColumn = true;
+                                if (GameBoard.CheckWin())
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine(GameBoard.ViewBoard());
+                                    Console.WriteLine($"Congratulations! {PlayerTwo.PlayerName} is the winner");
+                                    Console.WriteLine("Press any key to exit.");
+                                    Console.ReadLine();
+                                    Environment.Exit(0);
+                                }
                             }
                             else
                             {

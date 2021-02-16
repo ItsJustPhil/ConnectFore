@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phill\\source\\repos\\ConnectFour\\ConnectFore.csproj",
+      "projectUniqueName": "C:\\Users\\phill\\Documents\\GitHub\\SideProjects\\ConnectFore\\ConnectFore\\ConnectFore.csproj",
       "projectName": "ConnectFore",
-      "projectPath": "C:\\Users\\phill\\source\\repos\\ConnectFour\\ConnectFore.csproj",
+      "projectPath": "C:\\Users\\phill\\Documents\\GitHub\\SideProjects\\ConnectFore\\ConnectFore\\ConnectFore.csproj",
       "packagesPath": "C:\\Users\\phill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phill\\source\\repos\\ConnectFour\\obj\\",
+      "outputPath": "C:\\Users\\phill\\Documents\\GitHub\\SideProjects\\ConnectFore\\ConnectFore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phill\\AppData\\Roaming\\NuGet\\NuGet.Config",
