@@ -12,13 +12,13 @@ namespace ConnectFore.Classes
         public GameBoard()
         {
             LastPlaced = new int[2];
-            Board = new string[7, 7] { {"1 ","2 ","3 ","4 ","5 ","6 ","7"},
-                {"- ","- ","- ","- ","- ","- ","-"},
-                {"- ","- ","- ","- ","- ","- ","-"},
-                {"- ","- ","- ","- ","- ","- ","-"},
-                {"- ","- ","- ","- ","- ","- ","-"},
-                {"- ","- ","- ","- ","- ","- ","-"},
-                {"- ","- ","- ","- ","- ","- ","-"} };
+            Board = new string[7, 7] { {"1","2","3","4","5","6","7"},
+                {" "," "," "," "," "," "," "},
+                {" "," "," "," "," "," "," "},
+                {" "," "," "," "," "," "," "},
+                {" "," "," "," "," "," "," "},
+                {" "," "," "," "," "," "," "},
+                {" "," "," "," "," "," "," "} };
         }
 
         public string ViewBoard() {
@@ -35,16 +35,16 @@ namespace ConnectFore.Classes
 
         public bool PlacePiecePlayerOne(int column)
         {
-            if (!Board[1, column].Contains('-'))
+            if (!Board[1, column].Contains(' '))
             {
                 return false;
             }else
             {
                 for (int i = 6; i > 0; i--)
                 {
-                    if (Board[i, column].Contains('-'))
+                    if (Board[i, column].Contains(' '))
                     {
-                        string replaceSlot = Board[i, column].Replace('-', 'X');
+                        string replaceSlot = Board[i, column].Replace(' ', 'X');
                         Board[i, column] = replaceSlot;
                         LastPlaced[0] = i;
                         LastPlaced[1] = column;
@@ -56,7 +56,7 @@ namespace ConnectFore.Classes
         }
         public bool PlacePiecePlayerTwo(int column)
         {
-            if (!Board[1, column].Contains('-'))
+            if (!Board[1, column].Contains(' '))
             {
                 return false;
             }
@@ -64,9 +64,9 @@ namespace ConnectFore.Classes
             {
                 for (int i = 6; i > 0; i--)
                 {
-                    if (Board[i, column].Contains('-'))
+                    if (Board[i, column].Contains(' '))
                     {
-                        string replaceSlot = Board[i, column].Replace('-', 'O');
+                        string replaceSlot = Board[i, column].Replace(' ', 'O');
                         Board[i, column] = replaceSlot;
                         LastPlaced[0] = i;
                         LastPlaced[1] = column;

@@ -37,7 +37,7 @@ namespace ConnectFore.Classes
             {
                 Console.Clear();
                 do {
-                    Console.WriteLine(GameBoard.ViewBoard());
+                    PrintBoard();
                     Console.WriteLine("\n\n");
                     Console.WriteLine($"{PlayerOne.PlayerName}'s Turn:");
                     bool validColumn = false;
@@ -55,7 +55,7 @@ namespace ConnectFore.Classes
                                 if (GameBoard.CheckWin())
                                 {
                                     Console.Clear();
-                                    Console.WriteLine(GameBoard.ViewBoard());
+                                    PrintBoard();
                                     Console.WriteLine($"Congratulations! {PlayerOne.PlayerName} is the winner");
                                     Console.WriteLine("Press any key to exit.");
                                     Console.ReadLine();
@@ -78,7 +78,7 @@ namespace ConnectFore.Classes
                 while (!playerOnesTurn)
                 {
                     Console.Clear();
-                    Console.WriteLine(GameBoard.ViewBoard());
+                    PrintBoard();
                     Console.WriteLine("\n\n");
                     Console.WriteLine($"{PlayerTwo.PlayerName}'s Turn:");
                     bool validColumn = false;
@@ -96,7 +96,7 @@ namespace ConnectFore.Classes
                                 if (GameBoard.CheckWin())
                                 {
                                     Console.Clear();
-                                    Console.WriteLine(GameBoard.ViewBoard());
+                                    PrintBoard();
                                     Console.WriteLine($"Congratulations! {PlayerTwo.PlayerName} is the winner");
                                     Console.WriteLine("Press any key to exit.");
                                     Console.ReadLine();
@@ -119,6 +119,36 @@ namespace ConnectFore.Classes
             } 
             while (!gameOver);
 
+        }
+        private void PrintBoard()
+        {
+
+            string[,] board = GameBoard.Board;
+            for (int i = 0; i < 7; i++)
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("[");
+                    if (board[i, j].Contains('X'))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write(board[i, j]);
+                    }
+                    else if(board[i, j].Contains('O'))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(board[i, j]);
+                    }
+                    else
+                    {
+                        Console.Write(board[i, j]);
+                    }
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("]");
+                }
+                Console.Write("\n");
+            }Console.BackgroundColor = ConsoleColor.Black;    
         }
     }
 }
